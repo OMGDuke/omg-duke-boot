@@ -1,9 +1,10 @@
-body {
-  background-color: black;
+html, body {
+  background-color: #15141a;
+  height: 100%;
 }
 
 header {
-  background-image: url(../images/80s.jpg);
+  background-image: url(../images/header.png);
   height: 100vh;
   background-size: cover;
   background-position: center;
@@ -18,14 +19,14 @@ header {
 }
 
 #start {
-  color: white;
+  color:yellow;
   text-shadow: 10px 10px black;
   font-family: VT323;
-  font-size: 5.9vw;
+  font-size: 10vw;
 }
 
 #start:hover{
-  color:yellow;
+  color: #FFC300;
   text-decoration: none;
 }
 
@@ -42,4 +43,52 @@ header {
   to {
     visibility: hidden;
   }
+}
+
+.content {
+  font-family: VT323;
+  color: #18ff03;
+  margin-top:10px;
+}
+
+#tech {
+  margin-bottom: 20px;
+}
+
+.section-heading {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.thumbnail {
+    position: relative;
+}
+
+.caption {
+    position: absolute;
+    top: 45%;
+    left: 0;
+    width: 100%;
+}
+
+#tech-term, #hb-term {
+  background-image: url(../images/terminal.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: left top;
+  justify-content: center;
+  align-items: center;
+  min-width: 100%;
+
+}
+
+.project-title {
+  font-size: 3.0vh;
+  text-align: center;
+}
+
+.vcenter {
+    display: inline-block;
+    vertical-align: middle;
+    float: none;
 }
