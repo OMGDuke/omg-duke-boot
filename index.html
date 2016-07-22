@@ -13,36 +13,165 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans|VT323" rel="stylesheet">
   </head>
   <body>
+<!-- Header -->
     <header>
       <img id="logo" src="public/images/logo.png" alt="" />
       <a id="start" class="blink_me stroke" href="http://www.github.com/omgduke/cv">INSERT COIN TO HIRE ME</a>
-      <a href="#"class="scroll-link stroke" data-id='page-content'><i class="fa fa-chevron-circle-down fa-3x" aria-hidden="true"></i></span></a>
+      <a href="#"class="scroll-link stroke" data-id='page-content'><i class="fa fa-arrow-down fa-3x" aria-hidden="true"></i></span></a>
     </header>
-    <div id="page-content" class="container">
-      <div class="row">
-    	   <h2>Hi, my names Alex</h2>
-    	  <p class="caption">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    <div id="page-content">
+      <div id="intro">
+        <div class="container">
+          <div class="row center spacing">
+            <h1>Hi, my names Alex</h1>
+            <h4>I'm a Junior Developer looking for work as either a Front or Back End Developer.</h4>
+          </div>
+        </div>
       </div>
-      <div id='icons' class="row">
-       <div class="col-sm-12 col-md-4">
-         <h1><i class="fa fa-camera-retro fa-2x"></i></h1>
-         <h3>Technologies</h3>
-         <p>I'm experienced with Ruby, Rails, Javascript, AngularJS and Ionic framework</p>
-       </div>
+<!-- Icons -->
+      <div id="icons">
+        <div class="container">
+          <div class="row center spacing">
+            <div class="col-sm-12 col-md-4">
+              <h1><i class="fa fa-bolt fa-2x"></i></h1>
+              <h3>Technologies</h3>
+              <p>I'm experienced with Ruby, Rails, Javascript, AngularJS and Ionic framework</p>
+            </div>
+            <div class="col-sm-12 col-md-4">
+              <h1><i class="fa fa-graduation-cap fa-2x"></i></h1>
+              <h3>Life long learner</h3>
+              <p>I'm always up for a challenge and learning something new. I'm currently teaching myself Node and ExpressJS</p>
+            </div>
+            <div class="col-sm-12 col-md-4">
+              <h1><i class="fa fa-map fa-2x"></i></h1>
+              <h3>Location</h3>
+              <p>I'm based in London, UK. However for the right role I'm willing to travel!</p>
+            </div>
+          </div>
+        </div>
+      </div>
+<!-- Projects -->
+      <div id="projects">
+        <div class="container center">
+          <h1>Projects</h1>
+          <div class="row">
+            <div class="col-sm-12 col-md-4">
+              <a class="linky" href="#" data-toggle="modal" data-target="#hbModal">
+                <h3 >Happy Belly</h3>
+                <div class="thumbnail center-block">
+                  <img class="portrait" src="public/images/hb-screen.jpg" alt="" />
+                </div>
+              </a>
 
-       <div class="col-sm-12 col-md-4">
-         <h1><i class="fa fa-camera-retro fa-2x"></i></h1>
-         <h3>Life long learner</h3>
-         <p>I'm always up for a challenge and learning something new. I'm currently teaching myself Node and ExpressJS</p>
-       </div>
+            </div>
+            <div class="col-sm-12 col-md-4">
+              <a class="linky" href="#" data-toggle="modal" data-target="#wwModal">
+              <h3>Werewolves</h3>
+                <div class="thumbnail center-block">
+                  <img src="public/images/ww-screen.jpg" alt="" />
+                </div>
+              </a>
+            </div>
 
-       <div class="col-sm-12 col-md-4">
-         <h1><i class="fa fa-camera-retro fa-2x"></i></h1>
-         <h3>Location</h3>
-         <p>I'm based in London, UK. However for the right role I'm willing to travel!</p>
-       </div>
+            <div class="col-sm-12 col-md-4">
+              <a class="linky" href="#" data-toggle="modal" data-target="#mbModal">
+              <h3>Makers BnB</h3>
+              <div class="thumbnail center-block">
+                <img src="public/images/mb-screen.png" alt="" />
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+<!-- Social -->
+      <div id="social">
+          <div class="row center spacing">
+            <div class="col-sm-12 col-md-6">
+              <a class="linky" href="http://www.github.com/omgduke">
+                <h1><i class="fa fa-github fa-2x"></i></h1>
+                <h3>Github</h3>
+                <h4>@OMGDuke</h4>
+              </a>
+            </div>
+            <div class="col-sm-12 col-md-6">
+              <a class="linky" href="http://www.twitter.com/omgduke">
+                <h1><i class="fa fa-twitter fa-2x"></i></h1>
+                <h3>Twitter</h3>
+                <h4><strong>@OMGDuke</strong></h4>
+              </a>
+            </div>
+          </div>
+      </div>
+<!-- Footer -->
+      <footer>
+        <div class="container center">
+          © OMGDuke 2016
+        </div>
+      </footer>
+<!-- Modals -->
+      <div class="modal fade" id="hbModal" tabindex="-1" role="dialog" aria-labelledby="hbModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content center">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+              <h4 class="modal-title" id="myModalLabel">Happy Belly</h4>
+            </div>
+            <div class="modal-body">
+              <img class="img-responsive center-block" src="public/images/hb-screen.jpg" alt="" />
+              <div class="modal-footer center">
+                The app is designed to help people with food allergies or dietary
+                requirements quickly know whether they can eat a certain food. It
+                was built with AngularJS, Ionic, Cordova, Javascript. It has a
+                backend built in Rails using a Postgres DB.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
 
-     </div>
+      <div class="modal fade" id="wwModal" tabindex="-1" role="dialog" aria-labelledby="wwModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content center">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+              <h4 class="modal-title" id="myModalLabel">Werewolves</h4>
+            </div>
+            <div class="modal-body">
+              <img class="img-responsive center-block" src="public/images/ww-screen.jpg" alt="" />
+              <div class="modal-footer center">
+                A tool for the popular party game, New players can learn about
+                the game and the narrator can be guided through each step. It
+                was built using AngularJS, Javascript and Materialize.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal fade" id="mbModal" tabindex="-1" role="dialog" aria-labelledby="mbModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content center">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+              <h4 class="modal-title" id="myModalLabel">Makers BnB</h4>
+            </div>
+            <div class="modal-body">
+              <img class="img-responsive center-block" src="public/images/mb-screen.png" alt="" />
+              <div class="modal-footer center">
+                A clone of AirBnB which allows you to view and book a place to
+                stay. Built using Ruby, Sinatra, Postgres.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
     </div>
     <!-- JS -->
     <script src="public/js/jquery.min.js"></script>
