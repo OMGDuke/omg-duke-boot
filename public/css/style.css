@@ -1,3 +1,6 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+}
 header {
   background-image: url(../images/header.jpg);
   height: 100vh;
@@ -14,14 +17,14 @@ header {
 }
 
 #start {
-  color: yellow;
+  color:white;
   text-shadow: 5px 5px black;
   font-family: VT323;
   font-size: 9vw;
 }
 
 #start:hover{
-  color:#F9A825;
+  color:yellow;
   text-decoration: none;
 }
 
@@ -40,11 +43,13 @@ header {
   }
 }
 
-.fa-chevron-circle-down {
-    color: yellow;
+.fa-arrow-down{
+  color:white;
+  text-decoration: none;
 }
-.fa-chevron-circle-down:hover{
-  color:#F9A825;
+
+.fa-arrow-down:hover{
+  color:yellow;
   text-decoration: none;
 }
 
@@ -59,6 +64,57 @@ header {
        1px 1px 0 #000;
 }
 
-#icons {
+.center  {
   text-align: center;
+}
+
+.spacing {
+  padding: 20px 20px 20px 20px;
+}
+
+#icons, #social {
+  background-color: #F06292;
+  color:white;
+}
+
+#intro, #projects, footer {
+  background-color: #337ab7;
+  color:white;
+}
+
+.thumbnail {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  overflow: hidden;
+  border-color: #214b70;
+  border-width: thick;
+}
+.thumbnail img {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  height: 100%;
+  width: auto;
+  -webkit-transform: translate(-50%,-50%);
+      -ms-transform: translate(-50%,-50%);
+          transform: translate(-50%,-50%);
+}
+.thumbnail img.portrait {
+  width: 100%;
+  height: auto;
+}
+
+.modal-dialog {
+    width: 80%%;
+    color:black;
+}
+
+.linky {
+  color:white;
+}
+
+.linky:hover {
+  color: #8dc5f5;
+  text-decoration: none;
 }
